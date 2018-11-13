@@ -17,8 +17,8 @@ function binarySearch(arr, value, lo =0, hi = arr.length - 1, counter = 0){
 
 if(require.main === module){
   const sorted = input.split(' ').map(num => parseInt(num, 10)).sort((a, b) => a - b);
-  const index = binarySearch(sorted, 50);
+  const binary = binarySearch(sorted, 50);
   const linear = linearSearch(sorted, 50);
   console.log('linear', linear);
-  console.log(index);
+  console.log('binary', binary);
 }

@@ -3,7 +3,7 @@ function linearSearch(arr, value){
   for(let i = 0; i < arr.length; i++){
     searches++;
     if(arr[i] === value) {
-      console.log(`Search hit after ${searches} searches`);
+      console.log(`Linear search success after ${searches} searches`);
       return i;
     }
   }
